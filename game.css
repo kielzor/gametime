@@ -1,5 +1,74 @@
+body {
+  background-color: black;
+  font-family: 'CaveStoryRegular'; 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+.font-gradient {
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+header {
+  text-align: center; 
+  font-size: 6em;
+}
+
 #game {
-  border: 1px dashed;
-  margin: auto;
-  display: block;
+  border: 3px solid #C02425;
+  text-align: center;
+
+}
+
+
+.scoreboard {
+  border: 3px solid #C02425;
+  height: 650px;
+  margin: 0;
+  width: 22%;
+
+}
+
+.scoreHeader {
+  font-size: 2.4em;
+  height: 1em;
+  text-align: center;
+}
+
+.consoleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.left-column {
+  border: 3px solid #C02425;
+  width: 22%;
+}
+
+.rulesHeader {
+  font-size: 2.4em;
+  height: 1em;
+  text-align: center;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 8em;
+  width: 79%;
+}
+
+.bottomWrapper h2 {
+  font-size: 2.2em;
 }

@@ -3,10 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Game Time</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link href='./game.css' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cave-story" type="text/css"/>
 </head>
 <body>
-  <canvas id="game" width="300" height="300"></canvas>
+  
+  <header class="font-gradient">SNAKE</header>
+  <div class="consoleWrapper">
+    <div class="left-column">
+      <ol class="rules font-gradient">
+          <h1 class="rulesHeader">HOW TO PLAY</h1>
+      </ol>
+   </div>
+    <canvas id="game" width="800" height="650"></canvas>
+    <ol class="scoreboard">
+      <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
+    </ol>
+  </div>
+  <section class="bottomWrapper">
+    <span class="difficultyDisplay"><h2 class="font-gradient">Difficulty:</h2></span>
+    <span class="currentScoreDisplay"><h2 class="font-gradient">Score:</h2></span>
+  </section>
+  
   <script src="main.bundle.js"></script>
 </body>
 </html>
