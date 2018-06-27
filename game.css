@@ -5,11 +5,11 @@ body {
   font-style: normal; 
 }
 
-
 .font-gradient {
   background: #C02425;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -20,15 +20,10 @@ body {
 header {
   text-align: center; 
   font-size: 6em;
-  background: #C02425;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #game {
-  border: 1px dashed #C02425;
+  border: 3px solid #C02425;
   text-align: center;
 
 }
@@ -38,13 +33,13 @@ header {
   border: 3px solid #C02425;
   height: 650px;
   margin: 0;
-  width: 248px;
+  width: 22%;
+
 }
 
 .scoreHeader {
-  font-size: 3em;
-  /* margin: 1px;
-  padding: 2%; */
+  font-size: 2.4em;
+  height: 1em;
   text-align: center;
 }
 
@@ -52,6 +47,17 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.left-column {
+  border: 3px solid #C02425;
+  width: 22%;
+}
+
+.rulesHeader {
+  font-size: 2.4em;
+  height: 1em;
+  text-align: center;
 }
 
 
