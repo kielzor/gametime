@@ -43,7 +43,7 @@ header {
   text-align: center;
 }
 
-.wrapper {
+.consoleWrapper {
   display: flex;
   justify-content: flex-end;
   width: 100%;
