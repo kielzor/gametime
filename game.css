@@ -1,5 +1,32 @@
+
+header {
+  font-family: 'CaveStoryRegular'; 
+  font-weight: normal; 
+  font-size: 87px;
+  font-style: normal; 
+  text-align: center; 
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #game {
   border: 1px dashed;
-  margin: auto;
-  display: block;
+  text-align: center;
+
+}
+
+
+.scoreboard {
+  border: 1px solid black;
+  height: 650px;
+  margin: 0;
+  width: 248px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
 }
