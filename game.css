@@ -14,27 +14,29 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* =================================================================================================   
+Header
+=================================================================================================   */
 
-
-
-header {
-  text-align: center; 
+.titleHead {
   font-size: 6em;
+  text-align: center; 
 }
+
+/* =================================================================================================   
+mid
+=================================================================================================   */
 
 #game {
   border: 3px solid #C02425;
   text-align: center;
-
 }
-
 
 .scoreboard {
   border: 3px solid #C02425;
   height: 650px;
   margin: 0;
   width: 22%;
-
 }
 
 .scoreHeader {
@@ -63,9 +65,9 @@ header {
 .bottomWrapper {
   display: flex;
   justify-content: space-around;
-  text-align: center;
   margin: 0 auto;
   padding-right: 8em;
+  text-align: center;
   width: 79%;
 }
 
