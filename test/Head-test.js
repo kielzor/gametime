@@ -8,11 +8,11 @@ describe('Head', function () {
 
     head.move();
 
-    assert.equal(head.x, 55);
+    assert.equal(head.x, 56);
 
     head.move();
 
-    assert.equal(head.y, 60);
+    assert.equal(head.y, 62);
   })
 
   it('should have properties', function () {
@@ -23,10 +23,10 @@ describe('Head', function () {
       color: 'rgb(250, 0, 0)',
       dx: 1,
       dy: 1,
-      dxv: 5,
-      dyv: 5,
-      height: 10,
-      width: 10,
+      dxv: 6,
+      dyv: 6,
+      height: 20,
+      width: 20,
     };
     assert.deepEqual(head, expectedObj);
   });
