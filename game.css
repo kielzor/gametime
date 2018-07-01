@@ -14,56 +14,43 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* =================================================================================================   */
+
 .titleHead {
-  font-size: 6em;
+  font-size: 4em;
   text-align: center; 
 }
+
+
+/* =================================================================================================   
+mid
+=================================================================================================   */
 
 #game {
   border: 3px solid #C02425;
   text-align: center;
 }
 
-.scoreboard {
+.wrapper-right {
   border: 3px solid #C02425;
   margin: 0;
   width: 22%;
 }
 
-.scoreHeader {
-  font-size: 2.4em;
-  height: 1em;
-  text-align: center;
-}
-
-.consoleWrapper {
-  display: flex;
-  justify-content: flex-end;
+.scoreboard {
+  margin: 0;
+  height: 40%;
+  padding-left: 3em;
+  padding-top: 2em;
   width: 100%;
 }
 
-.left-column {
-  border: 3px solid #C02425;
-  width: 22%;
-}
-
-.rulesHeader {
+.scoreHeader {
   font-size: 2.4em;
   height: 1em;
+  padding-top: .35em;
   text-align: center;
-}
-
-.bottomWrapper {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin: 0 auto;
-  padding-right: 8em;
-  width: 79%;
-}
-
-.bottomWrapper h2 {
-  font-size: 2.2em;
+  width: 100%;
 }
 
 .current-score-display {
@@ -76,3 +63,71 @@ body {
   color: white;
   font-size: 2.2em;
 }
+
+.score-display {
+  color: white;
+  font-size: 2em;
+  list-style: decimal;
+  padding-left: 1em;
+}
+.consoleWrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.left-column {
+  border: 3px solid #C02425;
+  width: 22%;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.rulesHeader {
+  font-size: 2.4em;
+  height: 1em;
+  text-align: center;
+}
+
+.rules-row {
+  display: flex;
+  font-size: 1.5em;
+  height: 8em;
+  align-items: center;
+  width: 100%;
+}
+
+.rules-text {
+  padding-left: 1em;
+}
+
+.keys {
+  width: 3em;
+}
+
+.apple {
+  width: 1.2em;
+}
+
+.game-over {
+  width: 2em;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-right: 8em;
+  text-align: center;
+  width: 79%;
+}
+
+.bottomWrapper h2 {
+  font-size: 2.2em;
+}
+
+
