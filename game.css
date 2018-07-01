@@ -40,12 +40,15 @@ mid
 .scoreboard {
   margin: 0;
   height: 40%;
+  padding-left: 3em;
+  padding-top: 2em;
   width: 100%;
 }
 
 .scoreHeader {
   font-size: 2.4em;
   height: 1em;
+  padding-top: .35em;
   text-align: center;
   width: 100%;
 }
@@ -64,6 +67,8 @@ mid
 .score-display {
   color: white;
   font-size: 2em;
+  list-style: decimal;
+  padding-left: 1em;
 }
 .consoleWrapper {
   display: flex;
