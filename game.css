@@ -31,18 +31,40 @@ mid
   text-align: center;
 }
 
-.scoreboard {
+.wrapper-right {
   border: 3px solid #C02425;
   margin: 0;
   width: 22%;
+}
+
+.scoreboard {
+  margin: 0;
+  height: 40%;
+  width: 100%;
 }
 
 .scoreHeader {
   font-size: 2.4em;
   height: 1em;
   text-align: center;
+  width: 100%;
 }
 
+.current-score-display {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  padding-left: 1rem;
+  color: white;
+  font-size: 2.2em;
+}
+
+.score-display {
+  color: white;
+  font-size: 2em;
+}
 .consoleWrapper {
   display: flex;
   justify-content: flex-end;
@@ -103,13 +125,4 @@ mid
   font-size: 2.2em;
 }
 
-.current-score-display {
-  display: flex;
-  align-items: center;
-}
 
-.score {
-  padding-left: 1rem;
-  color: white;
-  font-size: 2.2em;
-}
