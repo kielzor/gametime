@@ -12,15 +12,34 @@
   <header class="titleHead font-gradient">SNAKE</header>
   <div class="consoleWrapper">
     <div class="left-column">
-      <ol class="rules font-gradient">
-          <h1 class="rulesHeader">HOW TO PLAY</h1>
-      </ol>
+      <div class="rules font-gradient">
+          <h1 class="rulesHeader font-gradient">HOW TO PLAY</h1>
+          <div class="rules-row">
+            <img class="keys" src="images/keyboard.svg">
+            <span class="rules-text">Press Any Direction to Start</span>
+          </div>
+          <div class="rules-row">
+            <img class="apple" src="images/apple.svg">
+            <span class="rules-text">Eat Fruit to Grow Bigger</span>
+          </div>
+          <div class="rules-row">
+            <img class="game-over" src="images/game-over.svg">
+            <span class="rules-text">Don't Hit the Wall or Your Body!</span>
+          </div>
+        </div>
    </div>
+
     <canvas id="game" width="800" height="660"></canvas>
+
+   <div class="wrapper-right">
+     <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
+
     <ol class="scoreboard">
-      <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
     </ol>
+    </div>
   </div>
+  
+  
   <section class="bottomWrapper">
     <span class="difficulty-display"><h2 class="font-gradient">Difficulty:</h2></span>
     <span class="current-score-display"><h2 class="font-gradient">Score: </h2><span class="score">0</span></span>
