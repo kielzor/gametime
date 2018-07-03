@@ -21,7 +21,7 @@ describe('GamePiece', function () {
     assert.isFalse(isColliding);
   })
 
-  it('should have properties', function () {
+  it.skip('should have properties', function () {
     const gamePiece = new GamePiece(50, 50, 'rgb(250, 0, 0)');
     const expectedObj = {
       x: 50,
