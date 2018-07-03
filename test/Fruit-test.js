@@ -9,17 +9,12 @@ describe('Fruit', function () {
     var fruit = new Fruit();
     assert.isObject(fruit);
   })
-
-
-  it('should have properties', function () {
+  it('should have a color of red', function() {
     var fruit = new Fruit();
-    var apple = {
-      x: fruit.x >= 0 && fruit.x <= 800,
-      y: fruit.y >= 0 && fruit.y <= 600,
-      color: 'rgb(250, 0, 0)',
-      height: 20,
-      width: 20
-    };
-    assert.deepEqual(fruit, apple);
+    assert.equal(fruit.color, 'rgb(250, 0, 0)');
   })
 })
+
+//it should appear in a random location
+
+
