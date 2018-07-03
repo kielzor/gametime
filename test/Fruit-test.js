@@ -14,7 +14,3 @@ describe('Fruit', function () {
     assert.equal(fruit.color, 'rgb(250, 0, 0)');
   })
 })
-
-//it should appear in a random location
-
-
