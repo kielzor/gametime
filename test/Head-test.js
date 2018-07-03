@@ -1,7 +1,7 @@
 const { assert } = require('chai');
 const Head = require('../lib/Head.js');
 
-describe('Head', function () {
+describe('Head', function() {
 
   it('should move', function() {
     const head = new Head(50, 50, 'rgb(250, 0, 0)', 1, 1);
