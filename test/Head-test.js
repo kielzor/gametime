@@ -9,10 +9,7 @@ describe('Head', function() {
     head.move();
 
     assert.equal(head.x, 70);
-
-    head.move();
-
-    assert.equal(head.y, 90);
+    assert.equal(head.y, 70);
   })
 
   it('should have properties', function () {
