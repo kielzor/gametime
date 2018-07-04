@@ -30,11 +30,23 @@ body {
   width: 22%;
 }
 
+/* 
+.initials {
+  z-index: 1;
+  display: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  Color: white;
+} */
+
+
 .rules {
   display: flex;
   flex-direction: column;
   padding: 1em;
 }
+
 
 .rulesHeader {
   font-size: 2.4em;
@@ -85,8 +97,7 @@ body {
 .scoreboard {
   margin: 0;
   height: 40%;
-  padding-left: 3em;
-  padding-top: 2em;
+  padding: 3em 0 0 3em;
 }
 
 .scoreHeader {
@@ -163,6 +174,14 @@ body {
 .current-score-display {
   align-items: center;
   display: flex;
+
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-right: 8em;
+  text-align: center;
+  width: 79%;
+
+
 }
 
 .score {
@@ -170,6 +189,36 @@ body {
   font-size: 2.2em;
   padding-left: 1rem;
 }
+
+
+.endgame-display {
+  align-items: center;
+  display: flex;
+  font-size: 2em;
+}
+
+.initials-text {
+  padding-left: 1em;
+}
+
+.initials-input {
+  background-color: transparent;
+  border: none;
+  color: #00FA00;
+  font-size: 1.2em;
+  font-family: 'CaveStoryRegular'; 
+  height: 40px;
+  outline: none;
+  padding-left: .5em;
+  width: 60px;
+}
+
+
+::placeholder {
+  color: #00FA00;
+  opacity: 1;
+}
+
 
 .score-display {
   color: white;
@@ -180,3 +229,4 @@ body {
   padding-left: 1em;
   width: 50%;
 }
+
