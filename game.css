@@ -1,25 +1,8 @@
 body {
   background-color: black;
   font-family: 'CaveStoryRegular'; 
-  font-weight: normal; 
   font-style: normal; 
-}
-
-.button {
-  align-items: center;
-  background-color: black;
-  border: none;
-  color: #F0CB35;
-  display: flex;
-  font-size: 30px;
-  opacity: .75;
-  outline: none;
-  text-align: center;
-}
-
-.button:hover {
-  cursor: pointer;
-  opacity: 1;
+  font-weight: normal; 
 }
 
 .font-gradient {
@@ -31,64 +14,67 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* =================================================================================================   */
-
 .titleHead {
   font-size: 4em;
   text-align: center; 
 }
 
-
-/* =================================================================================================   
-mid
-=================================================================================================   */
-
 #game {
   border: 3px solid #C02425;
+}
+
+/* Left side column for rules */
+
+.left-column {
+  border: 3px solid #C02425;
+  width: 22%;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.rulesHeader {
+  font-size: 2.4em;
+  height: 1em;
   text-align: center;
-  position: relative;
-  z-index: 0;
 }
 
-.initials {
-  z-index: 1;
-  display: fixed;
-  display: flex;
+.rules-row {
   align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  height: 8em;
+  width: 100%;
+}
+
+.rules-text {
+  padding-left: 1em;
+}
+
+.keys {
+  width: 3em;
+}
+
+.apple {
+  width: 1.2em;
+}
+
+.game-over {
+  width: 2em;
+}
+
+/* Main canvas/ game board */
+
+.consoleWrapper {
+  display: flex;
   justify-content: center;
-  Color: white;
+  width: 100%;
 }
 
-.difficulty-display {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 16rem;
-}
-
-.down-button {
-  transform: rotate(180deg);
-}
-
-.difficulty {
-  font-size: 18px;
-  min-width: 46px;
-  margin: 0 .5rem;
-  color: white;
-}
-
-.difficulty-buttons {
-  align-items: center;
-  display: flex;
-}
-
-.down {
-  padding: 10px 0 0;
-}
-
-.up {
-  padding-top: 10px;
-}
+/* Right side wrapper/ High scores section */
 
 .wrapper-right {
   border: 3px solid #C02425;
@@ -111,73 +97,7 @@ mid
   width: 100%;
 }
 
-.current-score-display {
-  display: flex;
-  align-items: center;
-}
-
-.score {
-  padding-left: 1rem;
-  color: white;
-  font-size: 2.2em;
-}
-
-.score-display {
-  color: white;
-  font-size: 2em;
-  list-style: decimal;
-  padding-left: 1em;
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-
-.consoleWrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.left-column {
-  border: 3px solid #C02425;
-  width: 22%;
-}
-
-.rules {
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-}
-
-.rulesHeader {
-  font-size: 2.4em;
-  height: 1em;
-  text-align: center;
-}
-
-.rules-row {
-  display: flex;
-  font-size: 1.5em;
-  height: 8em;
-  align-items: center;
-  width: 100%;
-}
-
-.rules-text {
-  padding-left: 1em;
-}
-
-.keys {
-  width: 3em;
-}
-
-.apple {
-  width: 1.2em;
-}
-
-.game-over {
-  width: 2em;
-}
+/* Bottom footer/ difficulty  and current score */
 
 .bottomWrapper {
   display: flex;
@@ -192,4 +112,71 @@ mid
   font-size: 2.2em;
 }
 
+.difficulty-display {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+}
 
+.difficulty {
+  color: white;
+  font-size: 18px;
+  margin: 0 .5rem;
+  min-width: 46px;
+}
+
+.difficulty-buttons {
+  align-items: center;
+  display: flex;
+}
+
+.button {
+  align-items: center;
+  background-color: black;
+  border: none;
+  color: #F0CB35;
+  display: flex;
+  font-size: 30px;
+  opacity: .75;
+  outline: none;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.down {
+  padding: 10px 0 0;
+}
+
+.down-button {
+  transform: rotate(180deg);
+}
+
+.up {
+  padding-top: 10px;
+}
+
+.current-score-display {
+  align-items: center;
+  display: flex;
+}
+
+.score {
+  color: white;
+  font-size: 2.2em;
+  padding-left: 1rem;
+}
+
+.score-display {
+  color: white;
+  display: flex;
+  font-size: 2em;
+  justify-content: space-between;
+  list-style: decimal;
+  padding-left: 1em;
+  width: 50%;
+}

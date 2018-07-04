@@ -32,7 +32,4 @@ describe('GamePiece', function() {
     };
     assert.deepEqual(gamePiece, expectedObj);
   });
-
-  
-
 })
