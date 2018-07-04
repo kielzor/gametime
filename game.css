@@ -1,67 +1,221 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Game Time</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link href='./game.css' rel='stylesheet' type='text/css'/>
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cave-story" type="text/css"/>
-</head>
-<body>
-  <header class="titleHead font-gradient">SNAKE</header>
-  <div class="consoleWrapper">
-    <div class="left-column">
-      <div class="rules font-gradient">
-        <h1 class="rulesHeader font-gradient">HOW TO PLAY</h1>
-        <div class="rules-row">
-          <img class="keys" src="images/keyboard.svg">
-          <span class="rules-text">Press Any Direction to Start</span>
-        </div>
-        <div class="rules-row">
-          <img class="apple" src="images/apple.svg">
-          <span class="rules-text">Eat Fruit to Grow Bigger</span>
-        </div>
-        <div class="rules-row">
-          <img class="game-over" src="images/game-over.svg">
-          <span class="rules-text">Don't Hit the Wall or Your Body!</span>
-        </div>
-      </div>
-    </div>
+body {
+  background-color: black;
+  font-family: 'CaveStoryRegular'; 
+  font-weight: normal; 
+  font-style: normal; 
+}
 
-  </div>
+.button {
+  align-items: center;
+  background-color: black;
+  border: none;
+  color: #F0CB35;
+  display: flex;
+  font-size: 30px;
+  opacity: .75;
+  outline: none;
+  text-align: center;
+}
 
-      <canvas id="game" width="800" height="660"></canvas>
-    <div class="wrapper-right">    
-      <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
-      <ol class="scoreboard"> </ol>
-    </div>
-  </div>  
+.button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
 
-  <section class="bottomWrapper">
-    <span class="difficulty-display">
-      <h2 class="font-gradient">Difficulty: </h2>
-      <form class="difficulty-buttons">
-        <button class="button down-button">
-          <p class="down">^</p>
-        </button>
-        <p class="difficulty">Easy</p>
-        <button class="button up-button">
-          <p class="up">^</p>
-        </button>
-      </form>
-    </span>
+.font-gradient {
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: auto 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    <span class="endgame-display">
-    </span>
-    <span class="current-score-display">
-      <h2 class="font-gradient">Score: 
-      </h2>
-      <span class="score">0
-      </span>
+/* =================================================================================================   */
 
-    </span>
-  </section>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="main.bundle.js"></script>
-</body>
-</html>
+.titleHead {
+  font-size: 4em;
+  text-align: center; 
+}
+
+
+/* =================================================================================================   
+mid
+=================================================================================================   */
+
+#game {
+  border: 3px solid #C02425;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+/* 
+.initials {
+  z-index: 1;
+  display: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  Color: white;
+} */
+
+.difficulty-display {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 16rem;
+}
+
+.down-button {
+  transform: rotate(180deg);
+}
+
+.difficulty {
+  font-size: 18px;
+  min-width: 46px;
+  margin: 0 .5rem;
+  color: white;
+}
+
+.difficulty-buttons {
+  align-items: center;
+  display: flex;
+}
+
+.down {
+  padding: 10px 0 0;
+}
+
+.up {
+  padding-top: 10px;
+}
+
+.wrapper-right {
+  border: 3px solid #C02425;
+  margin: 0;
+  width: 22%;
+}
+
+.scoreboard {
+  margin: 0;
+  height: 40%;
+  padding: 3em 0 0 3em;
+}
+
+.scoreHeader {
+  font-size: 2.4em;
+  height: 1em;
+  padding-top: .35em;
+  text-align: center;
+  width: 100%;
+}
+
+.current-score-display {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  padding-left: 1rem;
+  color: white;
+  font-size: 2.2em;
+}
+
+.score-display {
+  color: white;
+  font-size: 2em;
+  list-style: decimal;
+  padding-left: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.consoleWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-column {
+  border: 3px solid #C02425;
+  width: 22%;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.rulesHeader {
+  font-size: 2.4em;
+  height: 1em;
+  text-align: center;
+}
+
+.rules-row {
+  display: flex;
+  font-size: 1.5em;
+  height: 8em;
+  align-items: center;
+  width: 100%;
+}
+
+.rules-text {
+  padding-left: 1em;
+}
+
+.keys {
+  width: 3em;
+}
+
+.apple {
+  width: 1.2em;
+}
+
+.game-over {
+  width: 2em;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-right: 8em;
+  text-align: center;
+  width: 79%;
+}
+
+.bottomWrapper h2 {
+  font-size: 2.2em;
+}
+
+.endgame-display {
+  align-items: center;
+  display: flex;
+  font-size: 2em;
+}
+
+.initials-text {
+  padding-left: 1em;
+}
+
+.initials-input {
+  background-color: transparent;
+  border: none;
+  color: #00FA00;
+  font-size: 1.2em;
+  font-family: 'CaveStoryRegular'; 
+  height: 40px;
+  outline: none;
+  padding-left: .5em;
+  width: 60px;
+}
+
+
+::placeholder {
+  color: #00FA00;
+  opacity: 1;
+}
+
