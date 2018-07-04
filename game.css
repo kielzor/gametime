@@ -198,6 +198,10 @@ mid
   font-size: 2em;
 }
 
+.initials-text {
+  padding-left: 1em;
+}
+
 .initials {
   background-color: transparent;
   border: none;
@@ -206,8 +210,10 @@ mid
   font-family: 'CaveStoryRegular'; 
   height: 40px;
   outline: none;
-  width: 55px;
+  padding-left: .5em;
+  width: 60px;
 }
+
 
 ::placeholder {
   color: #00FA00;
