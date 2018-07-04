@@ -5,6 +5,7 @@ describe('Fruit', function () {
   it('should be a function', function () {
     assert.isFunction(Fruit);
   })
+  
   it('should instantiate a piece of fruit', function(){
     var fruit = new Fruit();
     assert.isObject(fruit);
@@ -21,5 +22,4 @@ describe('Fruit', function () {
     };
     assert.deepEqual(fruit, apple);
   })
-
 })
