@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Game Time</title>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link href='./game.css' rel='stylesheet' type='text/css'/>
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cave-story" type="text/css"/>
-</head>
-<body>
-  
-  <header class="titleHead font-gradient">SNAKE</header>
-  <div class="consoleWrapper">
-    <div class="left-column">
-      <div class="rules font-gradient">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Time</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href='./game.css' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cave-story" type="text/css"/>
+  </head>
+  <body>
+    <header class="titleHead font-gradient">SNAKE</header>
+    <div class="consoleWrapper">
+      <div class="left-column">
+        <div class="rules font-gradient">
           <h1 class="rulesHeader font-gradient">HOW TO PLAY</h1>
           <div class="rules-row">
             <img class="keys" src="images/keyboard.svg">
@@ -27,40 +26,33 @@
             <span class="rules-text">Don't Hit the Wall or Your Body!</span>
           </div>
         </div>
-   </div>
-
-    <canvas id="game" width="800" height="660"></canvas>
-    
-   <div class="wrapper-right">
-     <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
-
-    <ol class="scoreboard">
-    </ol>
+      </div>
+      <canvas id="game" width="800" height="660"></canvas>    
+      <div class="wrapper-right">
+        <h1 class="scoreHeader font-gradient">HIGH SCORES</h1>
+        <ol class="scoreboard"></ol>
+      </div>
     </div>
-  </div>
-  <section class="bottomWrapper">
-    <span class="difficulty-display">
-      <h2 class="font-gradient">Difficulty: </h2>
-      <form class="difficulty-buttons">
-        <button class="button down-button">
-          <p class="down">^</p>
-        </button>
-        <p class="difficulty">Easy</p>
-        <button class="button up-button">
-          <p class="up">^</p>
-        </button>
-      </form>
-    </span>
-    <span class="endgame-display">
-    </span>
-    <span class="current-score-display">
-      <h2 class="font-gradient">Score: 
-      </h2>
-      <span class="score">0
+    <section class="bottomWrapper">
+      <span class="difficulty-display">
+        <h2 class="font-gradient">Difficulty: </h2>
+        <form class="difficulty-buttons">
+          <button class="button down-button">
+            <p class="down">^</p>
+          </button>
+            <p class="difficulty">Easy</p>
+          <button class="button up-button">
+            <p class="up">^</p>
+          </button>
+        </form>
       </span>
-    </span>
-  </section>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="main.bundle.js"></script>
-</body>
+      <span class="endgame-display"></span>
+      <span class="current-score-display">
+        <h2 class="font-gradient">Score: </h2>
+        <span class="score">0</span>
+      </span>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.bundle.js"></script>
+  </body>
 </html>

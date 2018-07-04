@@ -45,10 +45,10 @@ describe('Game', function() {
     game.createSnake()
     
     for(let i = 0; i < 40; i++) {
-        game.animate(context);
-      }
+      game.animate(context);
+    }
     
-      game.wallCrash();
+    game.wallCrash();
     assert.equal(game.isGameOver, true);
   })
 
@@ -57,24 +57,26 @@ describe('Game', function() {
     const context = new Context();
     game.head = new Head(61, 41, 'rgb(0, 250, 0)', 1, 0);
     game.createSnake();
+
     for(let i = 0; i < 80; i++) {
-        game.animate(context);
-        game.growSnake();
-      }  
-      game.head.move();
-      game.animate(context);  
-      game.head.dx = 0;
-      game.head.dy = 1; 
-      game.head.move();
       game.animate(context);
-      game.head.dx = 1;
-      game.head.dy = 0; 
-      game.head.move();
-      game.animate(context);
-      game.head.dx = 0;
-      game.head.dy = 1;
-      game.hitTail();
-      assert.equal(game.isGameOver, true);
+      game.growSnake();
+    }  
+
+    game.head.move();
+    game.animate(context);  
+    game.head.dx = 0;
+    game.head.dy = 1; 
+    game.head.move();
+    game.animate(context);
+    game.head.dx = 1;
+    game.head.dy = 0; 
+    game.head.move();
+    game.animate(context);
+    game.head.dx = 0;
+    game.head.dy = 1;
+    game.hitTail();
+    assert.equal(game.isGameOver, true);
   })
 })
 

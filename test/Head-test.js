@@ -25,6 +25,7 @@ describe('Head', function() {
       height: 18,
       width: 18,
     };
+    
     assert.deepEqual(head, expectedObj);
   });
 })
