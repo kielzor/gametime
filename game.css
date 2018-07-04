@@ -134,7 +134,7 @@ mid
 
 .consoleWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
 }
 
