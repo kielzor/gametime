@@ -181,7 +181,7 @@ mid
 
 .bottomWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   padding-right: 8em;
   text-align: center;
@@ -193,7 +193,18 @@ mid
 }
 
 .endgame-display {
+  align-items: center;
+  display: flex;
   font-size: 2em;
+}
+
+.initials {
+  width: 20px;
+  height: 20px;
+  border: none;
+  color: blue;
+  background-color: transparent;
+  outline: none;
 }
 
 
