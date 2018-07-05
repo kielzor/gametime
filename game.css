@@ -21,6 +21,7 @@ body {
 
 #game {
   border: 3px solid #C02425;
+  cursor: none;
   text-align: center;
   position: relative;
   z-index: 0;
