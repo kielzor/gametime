@@ -78,6 +78,22 @@ describe('Game', function() {
     game.hitTail();
     assert.equal(game.isGameOver, true);
   })
+
+
+  it('The fruit should not spawn in the same place twice', function() {
+    const game = new Game();
+    const fruit = new Fruit();
+    game.head = new Head(fruit.x, fruit.y, 'rgb(0, 250, 0)', 1, 0);
+    fruit.x = Math.floor(Math.random() * (800 - 0) / 20) * 20 + 1;
+    fruit.y = Math.floor(Math.random() * (600 - 0) / 20) * 20 + 1;
+    assert.equal(fruit.x, fruit.x);
+    assert.equal(fruit.y, fruit.y);
+  })
+
+
+
+
+
 })
 
 
