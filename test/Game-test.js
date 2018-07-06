@@ -31,6 +31,16 @@ describe('Game', function() {
     assert.deepEqual(game, expectedObj);
   })
   
+it('should grow when it hits fruit', function() {
+  const game = new Game();
+  game.fruit = new Fruit();
+  game.head = new Head(game.fruit.x, game.fruit.y, 'rgb(0, 250, 0)', 0, 0);
+  game.createSnake();
+
+  game.hitFruit();
+  assert.equal(game.blocks.length, 3);
+})
+
   it('should add 2 heads when it grows', function() {
     const game = new Game();
       assert.equal(game.blocks.length, 0);
