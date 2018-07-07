@@ -37,6 +37,7 @@ it('should grow when it hits fruit', function() {
   game.head = new Head(game.fruit.x, game.fruit.y, 'rgb(0, 250, 0)', 0, 0);
   game.createSnake();
 
+  assert.equal(game.blocks.length, 1);
   game.hitFruit();
   assert.equal(game.blocks.length, 3);
 })
